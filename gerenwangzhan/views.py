@@ -3,5 +3,5 @@ from gallery.models import Gallery
 
 
 def home(request):
-    gallerys = Gallery.description
+    gallerys = Gallery.objects
     return render(request, 'home.html', {'gallerys': gallerys})
